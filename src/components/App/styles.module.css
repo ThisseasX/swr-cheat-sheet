@@ -1,0 +1,18 @@
+.root.root {
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  & > div {
+    width: calc(105mm - 23px);
+  }
+}
+
+@media print {
+  .pagebreak {
+    page-break-before: always;
+  }
+}
